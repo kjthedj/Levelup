@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		body{
+			background-color: #3A3A3A
+		}
+		ul{
+			list-style-type: none;
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			background-color: #010003;
+			position: -webkit-sticky;
+		}
+		li{
+			float: left;
+		}
+		li a, .dropbtn{
+			display: inline-block;
+			color: #FDFDFD;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		li:last-child{
+			border-right:none;
+		}
+		li a:hover:not(.active){
+			background-color:#EC0B0F;
+		}
+		.active{
+			background-color:#F30718;
+		}
+		
+		li a:hover, .dropdown:hover .dropbtn {
+			background-color:#F00525;
+		}
+		li.dropdown{
+			display: table;
+		}
+		.dropdown-content{
+			display: none;
+			text-align: left;
+			padding-right:0px; 
+			position: absolute;
+			min-width: 150px;
+			box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			
+		}
+		.dropdowncontent a{
+			color: black;
+ 			padding: 1px 1px;
+  			text-decoration: none;
+  			display: block;
+  			text-align: left;
+		}
+		.dropdown-content a:hover {
+			color: antiquewhite;
+			background-color: #000000;
+		}
+		.dropdown:hover .dropdown-content {
+  			display: block;
+		}
+		.dropdown:hover .dropdown-content {
+  			display: block;
+		}
+	</style>
+<meta charset="utf-8">
+<title>covidquiz.html</title>
+</head>
+<body>
+	<ul>
+	<li><a class="active" href="index.html">Home</a></li>
+	<li><a href="#Aboutus">About us</a></li>
+	<li class="dropdown">
+		<a class="dropbtn" href="javascript:void(0)">Menu</a>
+		<div class="dropdown-content">
+		<a href="#clickhole">clickhole</a>
+		<a href="#facts">facts</a></div></li>
+	<li style="float: right"><a href="Newsletter">Reach us</a></li></ul>
+	<h1 style="color: white; text-align: center">Covid-19 FAQ</h1>
+	<pre>
+	<h2 style="color: white">Symptoms</h2>
+	<p style="color: white">The most common symptoms of covid-19 include fever,dry cough and tiredness. The lesser known symptoms include aches and pains, diarrhoea, 
+sore throat,conjunctivitis,headache,loss of taste and smell and rashes on skin. Refer to the information pamphlet below to diffrentiate between the 
+common cold, covid-19 and influenza</p>
+	<img src="infop.jpg" alt="Information" width="400" height="550">
+	<h2 style="color:white">Prevention is better than cure</h2>
+	<p style="color: white">There are a few measure that can be taken to prevent getting infected. One of these measures is to get vaccinated. Theses include Moderna,Pfizer, Sinovac 
+	and many local vaccines in each region. Please refer to your own region  to find out what vaccines are offered. </p>
+	
+	
+	<p style="color: white">Have you understood the information above:-</p>
+	</pre>
+	
+		<button onclick="document.getElementById('myImage').src='welldone.gif'">Yes</button>
+
+<img id="myImage" src="again.gif" style="width:300px">
+		<button onclick="document.getElementById('myImage').src='again.gif'">No</button>
+
+</body>
+</html>
